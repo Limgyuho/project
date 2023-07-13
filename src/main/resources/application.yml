@@ -1,0 +1,37 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:ssl-server.jks
+    key-store-type: JKS
+    key-store-password: test1234
+    key-alias: selfsigned_localhost_sslserver
+  http:
+    port: 8085
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 30GB
+      max-request-size: 30GB
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/LimProject?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+    username: root
+    password:
+mybatis:
+  type-aliases-package: com.koreaIT.demo.vo
+  mapper-locations: classpath:com/koreaIT/demo/repository/*.xml
+file:
+  dir: C:/Users/USER/Desktop/파일경로
+  
+naver-cloud-sms:
+  accessKey: LdbrdlxG3vRcQHd0IMC7
+  secretKey: UAj8spEUxbosTA5fDwlbos2ZGLQgeBPCJwJL8oKG
+  serviceId: ncp:sms:kr:301436938187:home
+  
+  senderPhone: 01073756920
