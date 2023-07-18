@@ -8,7 +8,7 @@
 
 
 
-  <div class="w-1/2 h-96 border-red rounded-3xl p-8 m-3">
+  <div class="w-1/2 h-96 rounded-2xl border border-gray-300 p-8 m-3">
     <div class="p-4">
       <h2 class="text-xl font-bold mb-4 text-2xl">인사이동 발령</h2>	
       <h3 class="text-lg">우리 기관에서 알려드립니다</h3>
@@ -16,8 +16,11 @@
       <h3>${member.name}님 께서 </h3>
       <h3>${member.department} 부서로 인사이동 발령이 있었습니다.</h3>
       <h3 class="text-lg bottom-0">${member.regDate} 기관장 </h3>
+	<div class="p-4" style="position: relative;">
+	
+	  <img class="scaled-image" src="/resource/images/직인.jpg" style="position: absolute; right: 0;">
+	</div>
 
-<img class="scaled-image" src="/resource/images/직인.jpg">
 
 
 
